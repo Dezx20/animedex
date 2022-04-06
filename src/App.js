@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePages";
 function App() {
   return (
     <React.Fragment>
-      <h1>Testing</h1>;
+      <h1>Testing</h1>
       <HomePage />
     </React.Fragment>
   );
