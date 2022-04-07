@@ -2,5 +2,12 @@
   width: 60%;
   margin: 20px auto;
   border: 1px solid rgba(128, 128, 128, 0.334);
+  min-width: 600px;
   /* box-shadow: 0.5px 1px rgba(128, 128, 128, 0.415); */
 }
+
+/* @media (max-width: 600px) {
+  .container {
+    min-width: none;
+  }
+} */

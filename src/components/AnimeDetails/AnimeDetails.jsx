@@ -13,14 +13,44 @@ function AnimeDetails({ animeData, ...props }) {
             <img src={animeData.image} alt="anime_image" />
           </div>
           <div className={classes["more_info"]}>
-            <p>Director: {animeData?.director}</p>
-            <p>Original Title: {animeData?.original_title}</p>
-            <p>English Title: {animeData?.original_title_romanised}</p>
-            <p>Producer: {animeData?.producer}</p>
-            <p>Main title: {animeData?.title}</p>
+            <p>
+              <span>Director: </span> {animeData?.director}
+            </p>
+            <p>
+              <span>Original Title: </span>
+              {animeData?.original_title}
+            </p>
+            <p>
+              <span>English Title: </span>
+              {animeData?.original_title_romanised}
+            </p>
+            <p>
+              <span>Producer: </span>
+              {animeData?.producer}
+            </p>
+            <p>
+              <span>Main Title: </span>
+              {animeData?.title}
+            </p>
           </div>
         </div>
         <div className={classes["right_container"]}>
+          <div className={classes["extra_info"]}>
+            <div className={classes["score"]}>
+              <p>SCORE</p>
+              <span>{animeData?.rt_score}</span>
+            </div>
+            <div className={classes["separater_line"]}></div>
+            <div className={classes["score"]}>
+              Release Date
+              <span>{animeData?.release_date}</span>
+            </div>
+            <div className={classes["separater_line"]}></div>
+            <div className={classes["score"]}>
+              Running Time
+              <span>{animeData?.running_time} mins</span>
+            </div>
+          </div>
           <div className={classes["nav_header"]}>
             <ul>
               <li>location</li>
@@ -31,6 +61,7 @@ function AnimeDetails({ animeData, ...props }) {
           </div>
           <div className={classes["anime_synopsis"]}>
             Synopsis:
+            <div className={classes["gray_line_separator"]}></div>
             <p>{animeData?.description}</p>
           </div>
         </div>

@@ -12,6 +12,7 @@ const AnimeContainer = ({ animeData }) => {
         <div className={classes["subinfo"]}>
           <p>Release: {animeData?.release_date}</p>
           {/* <p>Score: {animeData?.rt_score}</p> */}
+          <p></p>
           <p>Running time: {animeData?.running_time}mins</p>
         </div>
         <div className={classes["container_body"]}>

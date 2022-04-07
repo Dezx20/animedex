@@ -26,7 +26,6 @@ const StartingPage = () => {
 
   return (
     <>
-      <header>Internship Task</header>
       <section className={classes["animelist-container"]}>
         {animeList.length > 0
           ? animeList.map((anime) => {
