@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./AnimeContainer.module.css";
 const AnimeContainer = ({ animeData }) => {
   return (
     <>
       <div className={classes["container"]}>
         {/* <div className={classes["main-container"]}> */}
-        <div className={classes["contianer-title"]}>{animeData?.title}</div>
+        <div className={classes["contianer-title"]}>
+          <Link to={`/anime/${animeData?.id}`}>{animeData?.title}</Link>
+        </div>
         <div className={classes["subinfo"]}>
           <p>Release: {animeData?.release_date}</p>
           {/* <p>Score: {animeData?.rt_score}</p> */}

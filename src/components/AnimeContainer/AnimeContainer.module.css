@@ -35,20 +35,24 @@
 
 .subinfo {
   height: 20px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(191, 188, 188, 0.221);
+  color: gray;
+  font-style: normal;
 }
 .subinfo p {
   padding: 5px;
   /* box-shadow: ; */
 }
 
-.subinfo:first-child {
-  border-right: 1px gray solid;
+.subinfo > :nth-child(1) {
+  /* height: 10px; */
+  border-right: 1px rgba(128, 128, 128, 0.514) solid;
+  overflow: hidden;
 }
 
 .container_body {
@@ -57,6 +61,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
+}
+.container_info::-webkit-scrollbar {
+  display: none;
 }
 
 .container_image {
